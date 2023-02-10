@@ -17,7 +17,7 @@ router.get('/projects', function(req, res, next) {
 router.get('/services', function(req, res, next) {
   res.render('index', { title: 'Services' });
 });
-router.get('/contact', function(req, res, next) {
-  res.render('index', { title: 'Contact' });
-});
+//router.get('/contact', function(req, res, next) {
+// res.render('index', { title: 'Contact' });
+//});
 module.exports = router;
