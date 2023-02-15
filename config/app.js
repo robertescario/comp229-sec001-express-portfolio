@@ -6,7 +6,8 @@ let logger = require('morgan');
 
 let indexRouter = require('../routes/index');
 let usersRouter = require('../routes/users');
-let contactsRouter = require('../routes/contact');
+let contactRouter = require('../routes/contact');
+let aboutsRouter = require('../routes/about');
 
 let app = express();
 
@@ -16,12 +17,13 @@ app.set('view engine', 'ejs');
 
 app.use(logger('dev'));
 app.use(express.json());
-app.use('/contact', contactsRouter);
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.static(path.join(__dirname, '../node_modules')));
 
+app.use('/contact', contactRouter);
+app.use('/about', aboutsRouter);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

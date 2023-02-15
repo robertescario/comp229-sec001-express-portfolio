@@ -1,24 +1,26 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <!--<div class="container-fluid">-->
-    <a class="navbar-brand" href="#">COMP229</a>
+<nav class="navbar navbar-expand-lg ">
+  <div class="container d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <a class="navbar-brand" href="#">
+      <img src="/images/BE logo.png" width="50" height="50">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
+      <ul class="navbar-nav col-12 col-lg-auto my-2 justify-content-center ml-auto">
         <% if(title=="Home"){%>
-        <li class="nav-item active">
-          <%}else{%>
-            <li class="nav-item">
-              <%}%>
-          <a class="nav-link active" aria-current="page" href="home"><i class="fa-solid fa-house-chimney"></i>Home</a>
-        </li>
+          <li class="nav-item active">
+        <%}else{%>
+          <li class="nav-item">
+        <%}%>
+            <a class="nav-link active" aria-current="page" href="home"><i class="fas fa-home"></i> Home </a>
+          </li>
         <% if(title=="About"){%>
         <li class="nav-item active">
           <%}else{%>
             <li class="nav-item">
               <%}%> 
-          <a class="nav-link active" aria-current="page" href="about"><i class="fa-solid fa-address-card"></i>About</a>
+          <a class="nav-link active" aria-current="page" href="about"><i class="fas fa-address-card"></i> About Me </a>
         </li>
 
         <% if(title=="Projects"){%>
@@ -27,7 +29,7 @@
             <li class="nav-item">
               <%}%> 
                
-          <a class="nav-link active" aria-current="page" href="projects"><i class="fa-brands fa-product-hunt"></i>Projects</a>
+          <a class="nav-link active" aria-current="page" href="projects"><i class="fas fa-terminal"></i> Projects </a>
         </li>
 
         <% if(title=="Services"){%>
@@ -35,26 +37,17 @@
           <%}else{%>
             <li class="nav-item">
               <%}%> 
-          <a class="nav-link active" aria-current="page" href="services"><i class="fa-brands fa-servicestack"></i>Services</a>
+          <a class="nav-link active" aria-current="page" href="services"><i class="fas fa-concierge-bell"></i> Services </a>
         </li>
-
-        <!--<% if(title=="Books"){%>
-        <li class="nav-item active">
-          <%}else{%>
-            <li class="nav-item">
-              <%}%> 
-          <a class="nav-link active" aria-current="page" href="book"><i class="fa-brands fa-servicestack"></i>Book</a>
-        </li>-->
-
 
          <% if(title=="Contact"){%>
         <li class="nav-item active">
           <%}else{%>
             <li class="nav-item">
               <%}%> 
-          <a class="nav-link active" aria-current="page" href="contact"><i class="fa-solid fa-address-book"></i>Contact</a>
+          <a class="nav-link active" aria-current="page" href="contact"><i class="fas fa-address-book"></i> Contact </a>
         </li>
        
     </div>
-  <!--</div>-->
+  </div>
 </nav>
