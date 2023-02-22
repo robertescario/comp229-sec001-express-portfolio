@@ -9,7 +9,8 @@ a {
 
 .home{
   background-size: cover;
-  position: relative;
+  
+  min-height: 400px;
   color: white;
   text-shadow: 2px 2px 2px rgba(0, 0, 0, .2);
 }
@@ -21,13 +22,13 @@ a {
   background-color: rgba(0, 0, 0, .2);
 }
 
-.card {
-  height: 100%;
+.card .img-fit {
+  aspect-ratio: 16/9;
+  object-fit: scale-down;
 }
 
-.img-fit {
-  max-height: 10px;
-  object-fit: cover;
+.card {
+  height: 100%;
 }
 
 .card-body {
@@ -38,4 +39,10 @@ a {
 
 .card-text {
   flex-grow: 1;
+}
+
+.cream-bg {
+  background-color: #f3eae3;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
